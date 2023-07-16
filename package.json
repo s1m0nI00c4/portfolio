@@ -4,8 +4,13 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "fe": "lerna run --scope react-frontend start",
+    "be": "lerna run --scope express-backend start",
+    "both": "lerna run --parallel start"
+  },
   "dependencies": {},
   "devDependencies": {
-    "lerna": "^7.1.3"
+    "lerna": "3.4.0"
   }
 }
